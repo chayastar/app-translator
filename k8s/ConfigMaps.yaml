@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: postgres-config
+data:
+  POSTGRES_USER: "postgres"        # המפתח שהיה חסר!
+  POSTGRES_DB: "translator_db"     # שם הדאטהבייס
+  POSTGRES_HOST: "postgres"
+  POSTGRES_PORT: "5432"
+  DB_HOST: "postgres"              # הוספתי גם את אלו ליתר ביטחון עבור הבקנד
+  DB_NAME: "translator_db"
+  DB_USER: "postgres"
